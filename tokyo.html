@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tokyo.css">
+    <title>Escuela en Tokio</title>
+</head>
+<body>
+    <h1>Clases de Sushi en Tokio</h1>
+    <img src="images/tokyo-city.jpg" alt="Ciudad de Tokio" class="city-image">
+    <img src="images/sushi.jpg" alt="Sushi" class="food-image">
+    <p>Aprende a preparar auténtico sushi en la hermosa ciudad de Tokio. Descubre la rica historia culinaria mientras disfrutas de una experiencia inolvidable.</p>
+    
+    <h2>Formulario de Inscripción</h2>
+    <form onsubmit="mostrarMensaje(event)">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="fecha">Fecha de Inicio:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <input type="submit" value="Inscribirse">
+    </form>
+
+    <p>Visita el <a href="https://www.metro.tokyo.lg.jp/english/" target="_blank">sitio oficial del gobierno de Tokio</a> para más información sobre la ciudad.</p>
+
+    <a href="index.html">Volver al Menú</a>
+
+    <script>
+        function mostrarMensaje(e) {
+            e.preventDefault();
+            alert('Correctamente inscrito');
+        }
+    </script>
+</body>
+</html>
